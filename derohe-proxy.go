@@ -3,8 +3,12 @@ package main
 import (
 	"derohe-proxy/config"
 	"derohe-proxy/proxy"
+	"encoding/json"
 	"fmt"
+	"io"
+	"log"
 	"net"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -13,21 +17,51 @@ import (
 	"github.com/docopt/docopt-go"
 )
 
+// Initialize the logger
+var logger *log.Logger
+
+type WalletStats struct {
+	Hashrate string `json:"hashrate"`
+	Shares   uint64 `json:"shares"`
+}
+
+type Stats struct {
+	Wallets map[string]WalletStats `json:"wallets"`
+}
+
+func init() {
+	// Create a log file
+	logFile, err := os.OpenFile("proxy.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		fmt.Println("Failed to open log file:", err)
+		os.Exit(1)
+	}
+
+	// Create a multi-writer that writes to both the log file and the console
+	multiWriter := io.MultiWriter(logFile, os.Stdout)
+
+	// Create a logger that writes to the multi-writer
+	logger = log.New(multiWriter, "", log.LstdFlags|log.Lshortfile)
+}
+
 func main() {
 	var err error
 
 	config.Arguments, err = docopt.Parse(config.Command_line, nil, true, "pre-alpha", false)
 
 	if err != nil {
+		logger.Println("Error parsing arguments:", err)
 		return
 	}
 
 	if config.Arguments["--listen-address"] != nil {
 		addr, err := net.ResolveTCPAddr("tcp", config.Arguments["--listen-address"].(string))
 		if err != nil {
+			logger.Println("Error resolving listen address:", err)
 			return
 		} else {
 			if addr.Port == 0 {
+				logger.Println("Port not specified in listen address")
 				return
 			} else {
 				config.Listen_addr = addr.String()
@@ -36,6 +70,7 @@ func main() {
 	}
 
 	if config.Arguments["--daemon-address"] == nil {
+		logger.Println("Daemon address not specified")
 		return
 	} else {
 		config.Daemon_address = config.Arguments["--daemon-address"].(string)
@@ -57,19 +92,20 @@ func main() {
 
 		addr, err := globals.ParseValidateAddress(address)
 		if err != nil {
-			fmt.Printf("%v Wallet address is invalid!\n", time.Now().Format(time.Stamp))
+			logger.Printf("%v Wallet address is invalid!\n", time.Now().Format(time.Stamp))
 		}
 		config.WalletAddr = addr.String()
 		if config.Worker != "" {
-			fmt.Printf("%v Using wallet %s and name %s for all connections\n", time.Now().Format(time.Stamp), config.WalletAddr, config.Worker)
+			logger.Printf("%v Using wallet %s and name %s for all connections\n", time.Now().Format(time.Stamp), config.WalletAddr, config.Worker)
 		} else {
-			fmt.Printf("%v Using wallet %s for all connections\n", time.Now().Format(time.Stamp), config.WalletAddr)
+			logger.Printf("%v Using wallet %s for all connections\n", time.Now().Format(time.Stamp), config.WalletAddr)
 		}
 	}
 
 	if config.Arguments["--log-interval"] != nil {
 		interval, err := strconv.ParseInt(config.Arguments["--log-interval"].(string), 10, 32)
 		if err != nil {
+			logger.Println("Error parsing log interval:", err)
 			return
 		} else {
 			if interval < 60 || interval > 3600 {
@@ -80,23 +116,18 @@ func main() {
 		}
 	}
 
-	/*if config.Arguments["--minimal"].(bool) {
-		config.Minimal = true
-		fmt.Printf("%v Forward only 2 jobs per block\n", time.Now().Format(time.Stamp))
-	}*/
-
 	if config.Arguments["--nonce"].(bool) {
 		config.Nonce = true
-		fmt.Printf("%v Nonce editing is enabled\n", time.Now().Format(time.Stamp))
+		logger.Printf("%v Nonce editing is enabled\n", time.Now().Format(time.Stamp))
 	}
 
 	if config.Arguments["--pool"].(bool) {
 		config.Pool_mode = true
 		config.Minimal = false
-		fmt.Printf("%v Pool mode is enabled\n", time.Now().Format(time.Stamp))
+		logger.Printf("%v Pool mode is enabled\n", time.Now().Format(time.Stamp))
 	}
 
-	fmt.Printf("%v Logging every %d seconds\n", time.Now().Format(time.Stamp), config.Log_intervall)
+	logger.Printf("%v Logging every %d seconds\n", time.Now().Format(time.Stamp), config.Log_intervall)
 
 	go proxy.Start_server()
 
@@ -132,12 +163,34 @@ func main() {
 			}
 		}
 
-		if !config.Pool_mode {
-			fmt.Printf("%v %d miners connected, IB:%d MB:%d MBR:%d MBO:%d\n", time.Now().Format(time.Stamp), miners, proxy.Blocks, proxy.Minis, proxy.Rejected, proxy.Orphans)
-		} else {
-			fmt.Printf("%v %d miners connected, Pool stats: IB:%d MB:%d MBR:%d MBO:%d\n", time.Now().Format(time.Stamp), miners, proxy.Blocks, proxy.Minis, proxy.Rejected, proxy.Orphans)
-			fmt.Printf("%v Shares submitted: %d, Hashrate: %s\n", time.Now().Format(time.Stamp), proxy.Shares, hash_rate_string)
+		stats := Stats{Wallets: make(map[string]WalletStats)}
+
+		// Update statistics for each user session
+		proxy.ClientListMutex.Lock()
+		for _, session := range proxy.ClientList {
+			address := session.Address.String()
+			logger.Printf("Processing session for address: %s\n", address) // Debug print
+			stats.Wallets[address] = WalletStats{
+				Hashrate: hash_rate_string,
+				Shares:   proxy.Shares,
+			}
 		}
-		proxy.CountWallets()
+		proxy.ClientListMutex.Unlock()
+
+		statsFile, err := os.Create("stats.json")
+		if err != nil {
+			logger.Printf("Error creating stats file: %v\n", err)
+			continue
+		}
+
+		encoder := json.NewEncoder(statsFile)
+		encoder.SetIndent("", "  ")
+		err = encoder.Encode(stats)
+		if err != nil {
+			logger.Printf("Error writing stats to file: %v\n", err)
+		} else {
+			logger.Println("Successfully wrote stats to stats.json") // Debug print
+		}
+		statsFile.Close()
 	}
 }

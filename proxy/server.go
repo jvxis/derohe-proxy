@@ -37,7 +37,7 @@ type user_session struct {
 	blocks        uint64
 	miniblocks    uint64
 	lasterr       string
-	address       rpc.Address
+	Address       rpc.Address
 	worker        string
 	orphans       uint64
 	hashrate      float64
@@ -55,8 +55,8 @@ type ( // array without name containing block template in hex
 	}
 )
 
-var client_list_mutex sync.Mutex
-var client_list = map[*websocket.Conn]*user_session{}
+var ClientListMutex sync.Mutex
+var ClientList = map[*websocket.Conn]*user_session{}
 
 var miners_count int
 var Shares uint64
@@ -109,10 +109,10 @@ func Start_server() {
 }
 
 func CountMiners() int {
-	client_list_mutex.Lock()
-	defer client_list_mutex.Unlock()
+	ClientListMutex.Lock()
+	defer ClientListMutex.Unlock()
 
-	miners_count = len(client_list)
+	miners_count = len(ClientList)
 
 	return miners_count
 }
@@ -120,12 +120,12 @@ func CountMiners() int {
 // forward all incoming templates from daemon to all miners
 func SendTemplateToNodes(data []byte) {
 
-	client_list_mutex.Lock()
-	defer client_list_mutex.Unlock()
+	ClientListMutex.Lock()
+	defer ClientListMutex.Unlock()
 
-	for rk, rv := range client_list {
+	for rk, rv := range ClientList {
 
-		if client_list == nil {
+		if ClientList == nil {
 			break
 		}
 
@@ -182,14 +182,14 @@ func onWebsocket(w http.ResponseWriter, r *http.Request) {
 	addr_raw := addr.PublicKey.EncodeCompressed()
 	wsConn := conn.(*websocket.Conn)
 
-	session := user_session{address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker}
+	session := user_session{Address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker}
 	wsConn.SetSession(&session)
 
-	client_list_mutex.Lock()
-	defer client_list_mutex.Unlock()
+	ClientListMutex.Lock()
+	defer ClientListMutex.Unlock()
 
-	client_list[wsConn] = &session
-	Wallet_count[client_list[wsConn].address.String()]++
+	ClientList[wsConn] = &session
+	Wallet_count[ClientList[wsConn].Address.String()]++
 
 	if config.WalletAddr != "" {
 		Address = config.WalletAddr
@@ -201,7 +201,7 @@ func onWebsocket(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("%v Incoming connection: %v (%v), Wallet: %v\n", time.Now().Format(time.Stamp), wsConn.RemoteAddr().String(), worker, address)
 	} else {
 		fmt.Printf("%v Incoming connection: %v (%v)\n", time.Now().Format(time.Stamp), wsConn.RemoteAddr().String(), worker)
-		if len(client_list) == 1 {
+		if len(ClientList) == 1 {
 			Connected = time.Now().UnixMilli()
 			shareValue = 0
 		}
@@ -218,12 +218,12 @@ func newUpgrader() *websocket.Upgrader {
 			return
 		}
 
-		client_list_mutex.Lock()
-		defer client_list_mutex.Unlock()
+		ClientListMutex.Lock()
+		defer ClientListMutex.Unlock()
 
 		SendToDaemon(data)
 		if !config.Pool_mode {
-			fmt.Printf("%v Submitting result from miner: %v (%v), Wallet: %v\n", time.Now().Format(time.Stamp), c.RemoteAddr().String(), client_list[c].worker, client_list[c].address.String())
+			fmt.Printf("%v Submitting result from miner: %v (%v), Wallet: %v\n", time.Now().Format(time.Stamp), c.RemoteAddr().String(), ClientList[c].worker, ClientList[c].Address.String())
 		} else {
 			Shares++
 			shareValue += difficulty
@@ -235,11 +235,11 @@ func newUpgrader() *websocket.Upgrader {
 	})
 
 	u.OnClose(func(c *websocket.Conn, err error) {
-		client_list_mutex.Lock()
-		defer client_list_mutex.Unlock()
-		Wallet_count[client_list[c].address.String()]--
-		fmt.Printf("%v Lost connection: %v (%v)\n", time.Now().Format(time.Stamp), c.RemoteAddr().String(), client_list[c].worker)
-		delete(client_list, c)
+		ClientListMutex.Lock()
+		defer ClientListMutex.Unlock()
+		Wallet_count[ClientList[c].Address.String()]--
+		fmt.Printf("%v Lost connection: %v (%v)\n", time.Now().Format(time.Stamp), c.RemoteAddr().String(), ClientList[c].worker)
+		delete(ClientList, c)
 	})
 
 	return u
