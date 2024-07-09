@@ -40,9 +40,10 @@ type user_session struct {
 	Address       rpc.Address
 	worker        string
 	orphans       uint64
-	hashrate      float64
+	Hashrate      float64
 	valid_address bool
 	address_sum   [32]byte
+	Shares        uint64  // Add field to track individual shares
 }
 
 type ( // array without name containing block template in hex
@@ -182,7 +183,7 @@ func onWebsocket(w http.ResponseWriter, r *http.Request) {
 	addr_raw := addr.PublicKey.EncodeCompressed()
 	wsConn := conn.(*websocket.Conn)
 
-	session := user_session{Address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker}
+	session := user_session{Address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker, Shares: 0}
 	wsConn.SetSession(&session)
 
 	ClientListMutex.Lock()
@@ -225,13 +226,13 @@ func newUpgrader() *websocket.Upgrader {
 		if !config.Pool_mode {
 			fmt.Printf("%v Submitting result from miner: %v (%v), Wallet: %v\n", time.Now().Format(time.Stamp), c.RemoteAddr().String(), ClientList[c].worker, ClientList[c].Address.String())
 		} else {
-			Shares++
+			session := ClientList[c]
+			session.Shares++  // Increment shares for the session
 			shareValue += difficulty
 			if Connected > 0 {
 				Hashrate = shareValue / (uint64(time.Now().UnixMilli()-Connected) / 1000)
 			}
 		}
-		//}
 	})
 
 	u.OnClose(func(c *websocket.Conn, err error) {

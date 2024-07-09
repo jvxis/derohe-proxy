@@ -173,3 +173,68 @@
 2024/07/08 20:05:10 derohe-proxy.go:192: Successfully wrote stats to stats.json
 2024/07/08 20:06:10 derohe-proxy.go:172: Processing session for address: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm
 2024/07/08 20:06:10 derohe-proxy.go:192: Successfully wrote stats to stats.json
+2024/07/09 07:24:56 derohe-proxy.go:105: Jul  9 07:24:56 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 07:24:56 derohe-proxy.go:125: Jul  9 07:24:56 Nonce editing is enabled
+2024/07/09 07:24:56 derohe-proxy.go:131: Jul  9 07:24:56 Pool mode is enabled
+2024/07/09 07:24:56 derohe-proxy.go:134: Jul  9 07:24:56 Logging every 60 seconds
+2024/07/09 07:26:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:26:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:27:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:27:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:28:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:28:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:29:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:29:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:30:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:30:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:31:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:31:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:32:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:32:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:33:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:33:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:34:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:34:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:35:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:35:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:36:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:36:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:37:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:37:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:38:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:38:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:39:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:39:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:40:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:40:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:41:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:41:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:42:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:42:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:43:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:43:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:44:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:44:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:45:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:45:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:46:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:46:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:47:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:47:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:48:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:48:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:49:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:49:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:50:03 derohe-proxy.go:195: Successfully wrote stats to stats.json
+2024/07/09 07:50:03 derohe-proxy.go:204: Connected Clients Stats:
+2024/07/09 07:51:10 derohe-proxy.go:105: Jul  9 07:51:10 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 07:51:10 derohe-proxy.go:125: Jul  9 07:51:10 Nonce editing is enabled
+2024/07/09 07:51:10 derohe-proxy.go:131: Jul  9 07:51:10 Pool mode is enabled
+2024/07/09 07:51:10 derohe-proxy.go:134: Jul  9 07:51:10 Logging every 60 seconds
+2024/07/09 07:52:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:52:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:52:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 10
+2024/07/09 07:53:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:53:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:53:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 07:53:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0

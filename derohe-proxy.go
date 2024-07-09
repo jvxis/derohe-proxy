@@ -11,6 +11,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/deroproject/derohe/globals"
@@ -28,6 +29,9 @@ type WalletStats struct {
 type Stats struct {
 	Wallets map[string]WalletStats `json:"wallets"`
 }
+
+var walletStats = make(map[string]WalletStats)
+var walletStatsMutex sync.Mutex
 
 func init() {
 	// Create a log file
@@ -144,38 +148,21 @@ func main() {
 	for {
 		time.Sleep(time.Second * time.Duration(config.Log_intervall))
 
-		miners := proxy.CountMiners()
-
-		hash_rate_string := ""
-
-		if miners > 0 {
-			switch {
-			case proxy.Hashrate > 1000000000000:
-				hash_rate_string = fmt.Sprintf("%.3f TH/s", float64(proxy.Hashrate)/1000000000000.0)
-			case proxy.Hashrate > 1000000000:
-				hash_rate_string = fmt.Sprintf("%.3f GH/s", float64(proxy.Hashrate)/1000000000.0)
-			case proxy.Hashrate > 1000000:
-				hash_rate_string = fmt.Sprintf("%.3f MH/s", float64(proxy.Hashrate)/1000000.0)
-			case proxy.Hashrate > 1000:
-				hash_rate_string = fmt.Sprintf("%.3f KH/s", float64(proxy.Hashrate)/1000.0)
-			case proxy.Hashrate > 0:
-				hash_rate_string = fmt.Sprintf("%d H/s", int(proxy.Hashrate))
-			}
-		}
-
-		stats := Stats{Wallets: make(map[string]WalletStats)}
-
 		// Update statistics for each user session
 		proxy.ClientListMutex.Lock()
 		for _, session := range proxy.ClientList {
 			address := session.Address.String()
-			logger.Printf("Processing session for address: %s\n", address) // Debug print
-			stats.Wallets[address] = WalletStats{
+			hash_rate_string := fmt.Sprintf("%.3f KH/s", session.Hashrate) // Example: Format hashrate per session
+			walletStatsMutex.Lock()
+			walletStats[address] = WalletStats{
 				Hashrate: hash_rate_string,
-				Shares:   proxy.Shares,
+				Shares:   session.Shares, // Use individual shares
 			}
+			walletStatsMutex.Unlock()
 		}
 		proxy.ClientListMutex.Unlock()
+
+		stats := Stats{Wallets: walletStats}
 
 		statsFile, err := os.Create("stats.json")
 		if err != nil {
@@ -189,8 +176,20 @@ func main() {
 		if err != nil {
 			logger.Printf("Error writing stats to file: %v\n", err)
 		} else {
-			logger.Println("Successfully wrote stats to stats.json") // Debug print
+			logger.Println("Successfully wrote stats to stats.json")
 		}
 		statsFile.Close()
+
+		logWalletStats()
+	}
+}
+
+func logWalletStats() {
+	logger.Println("Connected Clients Stats:")
+	walletStatsMutex.Lock()
+	defer walletStatsMutex.Unlock()
+
+	for address, stat := range walletStats {
+		logger.Printf("Wallet: %s, Hashrate: %s, Shares: %d\n", address, stat.Hashrate, stat.Shares)
 	}
 }

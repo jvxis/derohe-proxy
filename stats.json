@@ -1,8 +1,12 @@
 {
   "wallets": {
     "dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm": {
-      "hashrate": "8.862 KH/s",
-      "shares": 39
+      "hashrate": "0.000 KH/s",
+      "shares": 23
+    },
+    "dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7": {
+      "hashrate": "0.000 KH/s",
+      "shares": 7
     }
   }
 }
