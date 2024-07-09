@@ -40,7 +40,7 @@ type user_session struct {
 	Address       rpc.Address
 	worker        string
 	orphans       uint64
-	Hashrate      float64
+	Hashrate      uint64
 	valid_address bool
 	address_sum   [32]byte
 	Shares        uint64  // Add field to track individual shares
@@ -183,7 +183,7 @@ func onWebsocket(w http.ResponseWriter, r *http.Request) {
 	addr_raw := addr.PublicKey.EncodeCompressed()
 	wsConn := conn.(*websocket.Conn)
 
-	session := user_session{Address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker, Shares: 0}
+	session := user_session{Address: *addr, address_sum: graviton.Sum(addr_raw), worker: worker, Hashrate: 0, Shares: 0}
 	wsConn.SetSession(&session)
 
 	ClientListMutex.Lock()
@@ -231,6 +231,7 @@ func newUpgrader() *websocket.Upgrader {
 			shareValue += difficulty
 			if Connected > 0 {
 				Hashrate = shareValue / (uint64(time.Now().UnixMilli()-Connected) / 1000)
+				session.Hashrate = shareValue / (uint64(time.Now().UnixMilli()-Connected) / 1000)
 			}
 		}
 	})

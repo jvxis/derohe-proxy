@@ -238,3 +238,190 @@
 2024/07/09 07:53:18 derohe-proxy.go:188: Connected Clients Stats:
 2024/07/09 07:53:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
 2024/07/09 07:53:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:54:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:54:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:54:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:54:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 14
+2024/07/09 07:55:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:55:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:55:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 14
+2024/07/09 07:55:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:56:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:56:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:56:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 16
+2024/07/09 07:56:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:57:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:57:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:57:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 16
+2024/07/09 07:57:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:58:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:58:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:58:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 17
+2024/07/09 07:58:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 07:59:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 07:59:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 07:59:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 17
+2024/07/09 07:59:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 08:00:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:00:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:00:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 18
+2024/07/09 08:00:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 0
+2024/07/09 08:01:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:01:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:01:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 2
+2024/07/09 08:01:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 20
+2024/07/09 08:02:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:02:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:02:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 20
+2024/07/09 08:02:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 2
+2024/07/09 08:03:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:03:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:03:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 21
+2024/07/09 08:03:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 2
+2024/07/09 08:04:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:04:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:04:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 21
+2024/07/09 08:04:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 2
+2024/07/09 08:05:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:05:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:05:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 21
+2024/07/09 08:05:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 08:06:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:06:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:06:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 22
+2024/07/09 08:06:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 4
+2024/07/09 08:07:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:07:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:07:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 22
+2024/07/09 08:07:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 4
+2024/07/09 08:08:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:08:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:08:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 22
+2024/07/09 08:08:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 5
+2024/07/09 08:09:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:09:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:09:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 22
+2024/07/09 08:09:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 5
+2024/07/09 08:10:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:10:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:10:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 22
+2024/07/09 08:10:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 6
+2024/07/09 08:11:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:11:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:11:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:11:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:12:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:12:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:12:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:12:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:13:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:13:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:13:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:13:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:14:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:14:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:14:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:14:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:15:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:15:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:15:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:15:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:16:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:16:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:16:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:16:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:17:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:17:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:17:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:17:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:18:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:18:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:18:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 23
+2024/07/09 08:18:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 08:19:18 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 08:19:18 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 08:19:18 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 1
+2024/07/09 08:19:18 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:45:10 derohe-proxy.go:108: Jul  9 09:45:10 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 09:45:10 derohe-proxy.go:128: Jul  9 09:45:10 Nonce editing is enabled
+2024/07/09 09:45:10 derohe-proxy.go:134: Jul  9 09:45:10 Pool mode is enabled
+2024/07/09 09:45:10 derohe-proxy.go:137: Jul  9 09:45:10 Logging every 60 seconds
+2024/07/09 09:46:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:46:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:46:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:46:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:47:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:47:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:47:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:47:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:48:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:48:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:48:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:48:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:49:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:49:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:49:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:49:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:50:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:50:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:50:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:50:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:51:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:51:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:51:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:51:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:52:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:52:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:52:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:52:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:53:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:53:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:53:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 09:53:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:54:33 derohe-proxy.go:197: Successfully wrote stats to stats.json
+2024/07/09 09:54:33 derohe-proxy.go:202: Connected Clients Stats:
+2024/07/09 09:54:33 derohe-proxy.go:208: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 09:54:33 derohe-proxy.go:208: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Timestamp: 2024-07-09T09:46:33-03:00, Hashrate: 0.000 KH/s, Shares: 7
+2024/07/09 10:07:07 derohe-proxy.go:108: Jul  9 10:07:07 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 10:07:07 derohe-proxy.go:128: Jul  9 10:07:07 Nonce editing is enabled
+2024/07/09 10:07:07 derohe-proxy.go:134: Jul  9 10:07:07 Pool mode is enabled
+2024/07/09 10:07:07 derohe-proxy.go:137: Jul  9 10:07:07 Logging every 60 seconds
+2024/07/09 10:10:19 derohe-proxy.go:105: Jul  9 10:10:19 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 10:10:19 derohe-proxy.go:125: Jul  9 10:10:19 Nonce editing is enabled
+2024/07/09 10:10:19 derohe-proxy.go:131: Jul  9 10:10:19 Pool mode is enabled
+2024/07/09 10:10:19 derohe-proxy.go:134: Jul  9 10:10:19 Logging every 60 seconds
+2024/07/09 10:11:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:11:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:11:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 9
+2024/07/09 10:11:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 1
+2024/07/09 10:12:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:12:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:12:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:12:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 1
+2024/07/09 10:13:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:13:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:13:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:13:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 1
+2024/07/09 10:14:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:14:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:14:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:14:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 1
+2024/07/09 10:15:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:15:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:15:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:15:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 10:16:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:16:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:16:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:16:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 3
+2024/07/09 10:17:24 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:17:24 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:17:24 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 0.000 KH/s, Shares: 11
+2024/07/09 10:17:24 derohe-proxy.go:193: Wallet: dero1qys28f7w548hcg36c5t6jwvrr7w7ce8c5h79lxue7xwsp7wyk05kqqqq32jf7, Hashrate: 0.000 KH/s, Shares: 4
+2024/07/09 10:37:04 derohe-proxy.go:105: Jul  9 10:37:04 Using wallet dero1qyffn532qxv5elgpsf86xjz7035mx3w04fktqsyfu5vfl4e5lhr27qqwwwysk for all connections
+2024/07/09 10:37:04 derohe-proxy.go:125: Jul  9 10:37:04 Nonce editing is enabled
+2024/07/09 10:37:04 derohe-proxy.go:131: Jul  9 10:37:04 Pool mode is enabled
+2024/07/09 10:37:04 derohe-proxy.go:134: Jul  9 10:37:04 Logging every 60 seconds
+2024/07/09 10:38:11 derohe-proxy.go:179: Successfully wrote stats to stats.json
+2024/07/09 10:38:11 derohe-proxy.go:188: Connected Clients Stats:
+2024/07/09 10:38:11 derohe-proxy.go:193: Wallet: dero1qyhn2s4xvgwgzluxs0esndqtsmr3sjcldge3v82jyqtyrhz78s3tjqq7lulsm, Hashrate: 4878 KH/s, Shares: 10

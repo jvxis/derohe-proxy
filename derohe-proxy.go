@@ -152,7 +152,7 @@ func main() {
 		proxy.ClientListMutex.Lock()
 		for _, session := range proxy.ClientList {
 			address := session.Address.String()
-			hash_rate_string := fmt.Sprintf("%.3f KH/s", session.Hashrate) // Example: Format hashrate per session
+			hash_rate_string := fmt.Sprintf("%v H/s", session.Hashrate) // Example: Format hashrate per session
 			walletStatsMutex.Lock()
 			walletStats[address] = WalletStats{
 				Hashrate: hash_rate_string,
